@@ -1,5 +1,5 @@
 {
-  "DOMAIN": "my-STAGING-domain.com", 
+  "DOMAIN": "my-PRODUCTION-domain.com", 
   "SAVED_YOUR_BACON": true,
   "WAY_BETTER_THAN_USING_ENV_VARS": true,
   "SHOULD_WIN_THE_NOBEL_PRIZE": true

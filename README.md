@@ -13,11 +13,9 @@ Configuration:
 
 1) Start in the master branch
 
-2) Create a custom driver called "ours":
-git config --global merge.ours.driver true
+2) Create a custom driver called "ours": git config --global merge.ours.driver true
 
-3) Create a .gitattributes file in the root of the project with the following contents:
-config.json merge=ours
+3) Create a .gitattributes file in the root of the project with the following contents: config.json merge=ours
 
 4) Commit and push these changes to master
 
@@ -25,16 +23,14 @@ config.json merge=ours
 Testing
 -----------------------------------------------------
 
-1) Still in master, create a new staging branch from master
-git checkout -b staging master
+1) Still in master, create a new staging branch from master: git checkout -b staging master
 
-2) Make a change to config.json and 
-git add .
-git commit -m "staging change to config.json"
-git push origin staging
+2) Make a change to config.json and  
+git add .  
+git commit -m "staging change to config.json"  
+git push origin staging  
 
-3) Switch back to master
-git checkout master
+3) Switch back to master: git checkout master
 
 4) Confirm that config.json is unchanged by the merge from staging
 

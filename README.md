@@ -23,18 +23,18 @@ Configuration:
 Testing
 -----------------------------------------------------
 
-1) Still in master, create a new staging branch from master: git checkout -b staging master
+1) Still in master, create a new feature branch from master: git checkout -b my-feature master
 
-2) Make a change to config.json and  
+2) Make a change to config.json and commit the change:  
 git add .  
-git commit -m "staging change to config.json"  
-git push origin staging  
+git commit -m "my-feature change to config.json"  
+git push  
 
-3) Switch back to master:  
+3) Switch back to master and merge my-feature into master:  
 git checkout master  
-git merge staging  
+git merge my-feature  
 
-4) Confirm that config.json is unchanged by the merge from staging
+4) Confirm that config.json is unchanged by the merge from my-feature
 
 
 

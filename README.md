@@ -30,7 +30,9 @@ git add .
 git commit -m "staging change to config.json"  
 git push origin staging  
 
-3) Switch back to master: git checkout master
+3) Switch back to master:  
+git checkout master  
+git merge staging  
 
 4) Confirm that config.json is unchanged by the merge from staging
 

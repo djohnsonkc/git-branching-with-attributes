@@ -37,6 +37,13 @@ git merge my-feature
 4) Confirm that config.json is unchanged by the merge from my-feature
 
 
+Cleanup
+-----------------------------------------------------
+
+Delete a branch (locally and remotely)  
+  
+Remote: git push origin --delete <branch_name>   
+Local:  git branch -D <branch_name>  
 
 
 

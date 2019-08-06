@@ -48,10 +48,11 @@ Cleanup
 
 Delete a branch (locally and remotely)  
   
-Remote: git push origin --delete <branch_name>   
-Local:  git branch -D <branch_name>  
+Remote: git push origin --delete my-feature  
+Local:  git branch -D my-feature 
 
-
+Combined:  
+git push origin --delete my-feature && git branch -D my-feature  
 
 
 

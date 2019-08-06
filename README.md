@@ -13,9 +13,11 @@ Configuration:
 
 1) Start in the master branch
 
-2) Create a custom driver called "ours": git config --global merge.ours.driver true
+2) Create a custom driver called "ours":  
+git config --global merge.ours.driver true
 
-3) Create a .gitattributes file in the root of the project with the following contents: config.json merge=ours
+3) Create a .gitattributes file in the root of the project with the following contents:  
+config.json merge=ours
 
 4) Commit and push these changes to master
 
@@ -23,14 +25,18 @@ Configuration:
 Testing
 -----------------------------------------------------
 
-1) Still in master, create a new feature branch from master: git checkout -b my-feature master
+1) Still in master, create a new feature branch from master:  
+  
+$ git checkout -b my-feature master
 
-2) Make a change to config.json and commit the change:  
-git add .  
-git commit -m "my-feature change to config.json"  
-git push  
+2) Make a change to config.json and commit the change: 
+   
+$ git add .  
+$ git commit -m "my-feature change to config.json"  
+$ git push origin my-feature (note: git push is optional if you like to have your work backed up)
 
 3) Switch back to master and merge my-feature into master:  
+  
 git checkout master  
 git merge my-feature  
 
